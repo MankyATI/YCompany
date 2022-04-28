@@ -17,6 +17,8 @@
 		CAEE0195281B0A770012FC4F /* YCompanyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEE0194281B0A770012FC4F /* YCompanyTests.swift */; };
 		CAEE019F281B0A770012FC4F /* YCompanyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEE019E281B0A770012FC4F /* YCompanyUITests.swift */; };
 		CAEE01A1281B0A770012FC4F /* YCompanyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEE01A0281B0A770012FC4F /* YCompanyUITestsLaunchTests.swift */; };
+		CAEE01B7281B0C5C0012FC4F /* YCDesignKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAEE01B3281B0C350012FC4F /* YCDesignKit.framework */; };
+		CAEE01B8281B0C5C0012FC4F /* YCDesignKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CAEE01B3281B0C350012FC4F /* YCDesignKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +36,35 @@
 			remoteGlobalIDString = CAEE0176281B0A750012FC4F;
 			remoteInfo = YCompany;
 		};
+		CAEE01B2281B0C350012FC4F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAEE01AD281B0C350012FC4F /* YCDesignKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CA2C19E52819BA8100715516;
+			remoteInfo = YCDesignKit;
+		};
+		CAEE01B4281B0C350012FC4F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAEE01AD281B0C350012FC4F /* YCDesignKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CA2C19EF2819BA8200715516;
+			remoteInfo = YCDesignKitTests;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CAEE01B9281B0C5C0012FC4F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CAEE01B8281B0C5C0012FC4F /* YCDesignKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		CAEE0177281B0A750012FC4F /* YCompany.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YCompany.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +81,7 @@
 		CAEE019A281B0A770012FC4F /* YCompanyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YCompanyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAEE019E281B0A770012FC4F /* YCompanyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YCompanyUITests.swift; sourceTree = "<group>"; };
 		CAEE01A0281B0A770012FC4F /* YCompanyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YCompanyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CAEE01AD281B0C350012FC4F /* YCDesignKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = YCDesignKit.xcodeproj; path = YCompany/Frameworks/YCDesignKit/YCDesignKit.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAEE01B7281B0C5C0012FC4F /* YCDesignKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,10 +113,12 @@
 		CAEE016E281B0A750012FC4F = {
 			isa = PBXGroup;
 			children = (
+				CAEE01AD281B0C350012FC4F /* YCDesignKit.xcodeproj */,
 				CAEE0179281B0A750012FC4F /* YCompany */,
 				CAEE0193281B0A770012FC4F /* YCompanyTests */,
 				CAEE019D281B0A770012FC4F /* YCompanyUITests */,
 				CAEE0178281B0A750012FC4F /* Products */,
+				CAEE01B6281B0C5C0012FC4F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,6 +164,22 @@
 			path = YCompanyUITests;
 			sourceTree = "<group>";
 		};
+		CAEE01AE281B0C350012FC4F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CAEE01B3281B0C350012FC4F /* YCDesignKit.framework */,
+				CAEE01B5281B0C350012FC4F /* YCDesignKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CAEE01B6281B0C5C0012FC4F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -140,6 +190,7 @@
 				CAEE0173281B0A750012FC4F /* Sources */,
 				CAEE0174281B0A750012FC4F /* Frameworks */,
 				CAEE0175281B0A750012FC4F /* Resources */,
+				CAEE01B9281B0C5C0012FC4F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -220,6 +271,12 @@
 			mainGroup = CAEE016E281B0A750012FC4F;
 			productRefGroup = CAEE0178281B0A750012FC4F /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = CAEE01AE281B0C350012FC4F /* Products */;
+					ProjectRef = CAEE01AD281B0C350012FC4F /* YCDesignKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				CAEE0176281B0A750012FC4F /* YCompany */,
@@ -228,6 +285,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		CAEE01B3281B0C350012FC4F /* YCDesignKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = YCDesignKit.framework;
+			remoteRef = CAEE01B2281B0C350012FC4F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CAEE01B5281B0C350012FC4F /* YCDesignKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = YCDesignKitTests.xctest;
+			remoteRef = CAEE01B4281B0C350012FC4F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		CAEE0175281B0A750012FC4F /* Resources */ = {
