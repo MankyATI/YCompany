@@ -1,0 +1,6 @@
+framework module Pods_YCompany {
+  umbrella header "Pods-YCompany-umbrella.h"
+
+  export *
+  module * { export * }
+}
